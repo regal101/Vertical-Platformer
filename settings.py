@@ -1,0 +1,101 @@
+# game options/settings
+TITLE = "Jumpy!"
+WIDTH = 600
+HEIGHT = 480
+FPS = 60
+FONT_NAME = 'arial'
+HS_FILE = "highscore.txt"
+SPRITESHEET_ITEMS = "items_spritesheet.png"
+SPRITESHEET_PLAYER = "p1_spritesheet.png"
+SPRITESHEET_TILES = "tiles_spritesheet.png"
+SPRITESHEET_ENEMIES ="enemies_spritesheet.png"
+SPRITESHEET_JUMPER = "spritesheet_jumper.png"
+
+# CONSTANT
+
+
+# Player properties
+PLAYER_ACC = 0.5
+PLAYER_FRICTION = -0.08
+PLAYER_GRAVITY = 0.8
+PLAYER_BASE_JUMP = -21
+PLAYER_THRESHOLD_VELOCITYX = 0.1
+INVINCIBLE = "OFF"
+
+# Game properties
+SPRING_POWER = -40
+DIFFICULTY = 1
+
+SPRING_SPWN_RATE = 0.05
+LONG_PLAT_MOB_SPAWN_RATE = 0.20
+SHORT_PLAT_MOB_SPAWN_RATE = 0.03
+DEC_SPAWN_RATE = 0.2
+
+STAR_LAYER = 1
+CLOUD_LAYER = 2
+PLATFORM_LAYER = 3
+DEC_LAYER = 4
+SPRING_LAYER = 4
+BUBBLE_LAYER = 5
+PLAYER_LAYER = 6
+MOB_LAYER = 6
+
+
+
+ENEMY_LIST = ["spider","bat","bee"]
+DECORATION_LIST = ["grass","mushroom1","mushroom2","cactus"]
+
+# define colors
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+YELLOW = (255, 255, 0)
+LIGHT_BLUE = (0,155,155)
+
+"""
+GRASS_CENTER = (504,576,70,70)
+GRASS_CENTER_ROUNDED = (648,0,70,70)
+GRASS_LEFT = (576,720,70,70)
+GRASS_RIGHT = (576,576,70,70)
+HALF_GRASS_CENTER_ROUNDED = (576,432,70,40)
+HALF_GRASS_CENTER = (576,288,70,40)
+HALF_GRASS_LEFT = (576,360,70,40)
+HALF_GRASS_RIGHT = (576,216,70,40)
+"""
+GRASS_SHORT = (213,1662,201,100)
+GRASS_LONG = (0,288,380,94)
+SNOW_SHORT = (213,1764,201,100)
+SNOW_LONG = (0,768,380,94)
+STONE_SHORT = (382,408,201,100)
+STONE_LONG = (0,96,380,94)
+
+
+
+# Starting platform
+#BASE_PLATFORM = [GRASS_LEFT,GRASS_CENTER,GRASS_CENTER,GRASS_RIGHT]
+
+PLATFORM_LIST = [ (210, HEIGHT - 70, GRASS_LONG),
+                  
+                  
+                  (150, HEIGHT/2, GRASS_SHORT),
+                  #(350, HEIGHT/3, GRASS_LONG),
+                  (100, HEIGHT/4, GRASS_SHORT),
+                  (450, HEIGHT/4.5, GRASS_SHORT),
+                  
+                  (50, HEIGHT/1.5, GRASS_SHORT),
+                  #(230, HEIGHT/1.5, GRASS_LONG),
+                  (500, HEIGHT/1.8, GRASS_SHORT),
+                  ]
+
+
+
+
+
+
+
+
+
+
+        
